@@ -1,0 +1,18 @@
+#header-section {
+    background-color: #10353d;
+    color: red;
+    padding: 20px 0 20px 0;
+    .own-image{
+        text-align: center;
+        img {
+            border: 3px solid white;
+            border-radius: 50%;
+            height: 200px;
+            width:200px;
+        }
+    }
+
+    .description{
+        margin-top:10px;
+    }
+}
