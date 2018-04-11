@@ -1,0 +1,45 @@
+#about-section,#resume-section, #experience-section, #contact-section, #skills-section{
+    padding: 0px 30px 0px 30px;
+  
+    .resume-specific-section{
+      margin-top: 20px;
+    }
+    .header{
+      background: #434b51;
+      color: #fff;
+      padding: 2px 15px 2px 15px;
+      margin: 0px
+    }
+    .resume-category{
+      padding: 20px 0px 15px 0px;
+    }
+    .separator{
+      border-bottom: 1px solid #ebebeb;
+      height: 20px;
+      margin-bottom: 20px;
+    }
+    .resume-info{
+      border-left: 2px solid #1aa1e1;
+      padding-left: 15px;
+      .date{
+        float: right;
+        margin-bottom:0px;
+      }
+      h4{
+        margin-bottom: 9px;
+        margin-top: 0px;
+      }
+      .description{
+        margin-bottom:0px;
+      }
+      h5{
+        margin-top: 0px;
+      }
+    }
+  
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #d8d8d8;
+    border-bottom-width: 2px;
+  
+  }

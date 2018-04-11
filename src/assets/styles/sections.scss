@@ -1,0 +1,58 @@
+#about-section{
+    .resume-info {
+      border-left: 2px solid #b3c833 !important;
+    }
+    .interest{ 
+      float:left; 
+      margin: 0px 10px 0px 10px;
+    }
+  } 
+
+
+
+  #contact-section{
+    .resume-info {
+      border-left: 2px solid #fb8521 !important;
+    }
+    .contact-info{
+      img{
+        height: 20px;
+      }
+      .col-xs-11{
+        padding-left: 0px;
+      }
+      h5{
+        margin-bottom: 10px;
+        margin-top: 2px;
+      }
+    }
+  
+    .follow-section{
+      text-align: center;
+      img{
+        height: 50px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+
+
+  #experience-section{
+    .resume-info {
+      border-left: 2px solid #ce5043 !important;
+    }
+  }
+
+
+  #skills-section{
+    .resume-info {
+      border-left: 2px solid #3f5ca9 !important;
+    }
+  
+    .interest{
+      float:left;
+      margin: 0px 5px 0px 5px;
+      padding: 0px 5px 0px 5px;
+    }
+  }

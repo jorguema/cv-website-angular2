@@ -1,4 +1,82 @@
 <header id="header-section">
+    <div id="menu-left-container">
+        <div id="left-content">
+            <div class="bckground-left">
+                <div class="menu-left">
+                    <ul class="main-menu">
+                        <li id="option1" [ngClass]="{ 'resume-clicked': optionSelected == 'about' }" class="sliding-middle-out about">
+                            <a (click)="about()" class="clickable">
+                                <div class="image-section">
+                                    <div>
+                                        <img [src]="'/assets/images/administrator.svg'" />
+                                        <img [src]="'/assets/images/administrator2.svg'" *ngIf="optionSelected == 'about'" class="special-img-menu" />
+                                    </div>
+                                </div>
+                                <div class="menu-section">
+                                    <p>{{'ABOUT_ME'|translate}}</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="option2" [ngClass]="{ 'resume-clicked': optionSelected == 'resume' }" class="sliding-middle-out resume">
+                            <a (click)="resume()" class="clickable">
+                                <div class="image-section">
+                                    <div>
+                                        <img [src]="'/assets/images/graduation.svg'" class="graduation-img" />
+                                        <img [src]="'/assets/images/graduation2.svg'" *ngIf="optionSelected == 'resume'" class="graduation-img special-img-menu"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="menu-section">
+                                    <p>{{'RESUME'|translate}}</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="option3" [ngClass]="{ 'resume-clicked': optionSelected == 'experience' }" class="sliding-middle-out experience">
+                            <a (click)="experience()" class="clickable">
+                                <div class="image-section experience-img">
+                                    <div>
+                                        <img [src]="'/assets/images/briefcase.svg'" class="experience-img" />
+                                        <img [src]="'/assets/images/briefcase2.svg'" *ngIf="optionSelected == 'experience'" class="experience-img special-img-menu"
+                                        />
+                                    </div>
+                                </div>
+                                <div class="menu-section">
+                                    <p>{{'EXPERIENCE'|translate}}</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="option4" [ngClass]="{ 'resume-clicked': optionSelected == 'skills' }" class="sliding-middle-out skills">
+                            <a (click)="skills()" class="clickable">
+                                <div class="image-section">
+                                    <div>
+                                        <img [src]="'/assets/images/skills.svg'" />
+                                        <img [src]="'/assets/images/skills2.svg'" *ngIf="optionSelected == 'skills'" class="special-img-menu" />
+                                    </div>
+                                </div>
+                                <div class="menu-section">
+                                    <p>{{'SKILLS'|translate}}</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="option5" [ngClass]="{ 'resume-clicked': optionSelected == 'contact' }" class="sliding-middle-out contact">
+                            <a (click)="contact()" class="clickable">
+                                <div class="image-section">
+                                    <div>
+                                        <img [src]="'/assets/images/contactme.svg'" />
+                                        <img [src]="'/assets/images/contactme2.svg'" *ngIf="optionSelected == 'contact'" class="special-img-menu" />
+                                    </div>
+                                </div>
+                                <div class="menu-section">
+                                    <p>{{'CONTACT'|translate}}</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="background">
         <div class="own-image">
             <img src="/assets/images/me.jpg" alt="me">
@@ -8,4 +86,6 @@
             <h3>Software Developer</h3>
         </div>
     </div>
+
+
 </header>

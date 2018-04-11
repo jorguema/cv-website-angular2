@@ -22,7 +22,7 @@
                     <div class="resume-info">
                         <div class="row">
                             <div class="col-xs-12">
-                                <div data-ng-repeat="interest in interests" class="description interest stagger-list">
+                                <div *ngFor="let interest of interests" class="description interest stagger-list">
                                     <span>{{interest |translate}}</span>
                                 </div>
                             </div>

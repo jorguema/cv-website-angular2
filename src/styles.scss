@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+@import '../src/assets/styles/common.scss';
+@import '../src/assets/styles/sections.scss';
+@import '../src/assets/styles/animation.scss';
+
+/* @import "header/header.less";
+@import "left/left.less";
+@import "right/right.less";
+@import "features/about/about.less";
+@import "features/common/content.less";
+@import "features/experience/experience.less";
+@import "features/contact/contact.less";
+@import "features/skills/skills.less";
+@import "animation.less"; */
+
+body {
+    background-color: #E5E5E5;
+    font-family: 'Lato', sans-serif !important;
+  }
+  
+
+  
+.container{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  
+    width: 970px !important;
+  }
+
+  
+.clickable{
+    cursor:pointer;
+  }
+  
+  a:hover
+  {
+    text-decoration:none;
+  }
+  
+  h4{
+    font-weight: 600;
+  }
+  
+  h5{
+    font-style: italic;
+  }
+  
+  p.description{
+    line-height: 17px;
+  }
+  
+  
+  h3{
+    font-size: 22px;
+  }
