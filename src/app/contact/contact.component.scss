@@ -1,0 +1,41 @@
+
+  #contact-section{
+    height: 160px;
+    overflow: hidden;
+    border-left: 3px solid #fb8521 !important;
+    position: relative;
+    .contact-options{
+        img{
+            height: 25px;
+            padding-right: 10px;
+        }
+    }
+
+    .contact-separator{
+        top:0;
+        left: 0;
+        z-index: 1;
+        position: absolute;
+        border-style:solid;
+        border-width: 327px 80px 0 0px;
+        border-color: #fff transparent transparent transparent;
+    }
+
+    .contact-more{
+        position: absolute;
+        height: 160px;
+        right: 0;
+        top: 0;
+        background-color: #fb8521;
+    }
+
+    .follow-me{
+        padding-left: 85px;
+        height: 160px;
+        text-align: center;
+        line-height: 160px;
+        img{
+            height: 65px;
+        }
+    }
+  }

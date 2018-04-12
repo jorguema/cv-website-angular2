@@ -66,7 +66,7 @@
     "ABOUT_SECTION": "About me",
     "ABOUT_ME_DESCRIPTION": "Software developer, enthusiast of new technologies, entrepreneur, techcrunch lover, team worker, constant, self taught and comprehensive!",
     "ABOUT_ME_DESCRIPTION_2": "Be constant and make things right. That's what i apply to my life.",
-    "ABOUT_ME_DESCRIPTION_3": "I really enjoy software development, specially when you have to do magic in deadlines. Joking apart, be a software developer is awesome, is like being the top of the food chain.",
+    "ABOUT_ME_DESCRIPTION_3": "I really enjoy software development, specially when you have to do magic in deadlines. Joking apart, be a software developer is awesome!",
     "ABOUT_ME_DESCRIPTION_4": "Single page applications, user experience, rest api and cloud platforms, that's what really defines me.",
     "INTERESTS_SECTIONS": "Interests",
     "MUSIC": "Music",
@@ -142,5 +142,6 @@
     "GOOD_PRACTICES": "Good practices",
     "EN": "English",
     "ES": "Spanish",
-    "ACTUAL":"Present"
+    "ACTUAL":"Present",
+    "TALK_CONTACT": "Let's have a talk!"
 }
