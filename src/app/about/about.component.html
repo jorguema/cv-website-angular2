@@ -1,35 +1,72 @@
-<div id="about-section">
+<div>
     <div class="row">
-        <div class="col-xs-12">
-            <div class="resume-specific-section">
-                <h3 class="header">{{'ABOUT_SECTION'|translate}}</h3>
+        <div class="col-12 section-title">
+            <p class="header">{{'ABOUT_SECTION'|translate}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div id="about-section" class="col-12">
+            <div class="resume-specific-section row">
                 <div class="resume-category">
                     <div class="resume-info">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h4 class="title">{{'ABOUT_ME_DESCRIPTION' |translate}}</h4>
-                            </div>
+                        <div class="col-12">
+                            <h4 class="title">{{'ABOUT_ME_DESCRIPTION' |translate}}</h4>
                         </div>
-                        <h5 class="subtitle">{{'ABOUT_ME_DESCRIPTION_2' |translate}}</h5>
-                        <h5 class="subtitle">{{'ABOUT_ME_DESCRIPTION_3' |translate}}</h5>
-                        <h5 class="subtitle">{{'ABOUT_ME_DESCRIPTION_4' |translate}}</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="resume-specific-section">
-                <h3 class="header">{{'INTERESTS_SECTIONS'|translate}}</h3>
-                <div class="resume-category">
-                    <div class="resume-info">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div *ngFor="let interest of interests" class="description interest stagger-list">
-                                    <span>{{interest |translate}}</span>
-                                </div>
-                            </div>
+                        <div class="col-12">
+                            <h5 class="subtitle">{{'ABOUT_ME_DESCRIPTION_2' |translate}}</h5>
+                            <h5 class="subtitle">{{'ABOUT_ME_DESCRIPTION_3' |translate}}</h5>
+                            <h5 class="subtitle">{{'ABOUT_ME_DESCRIPTION_4' |translate}}</h5>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-12 section-title">
+            <p class="header">{{'INTERESTS_SECTIONS'|translate}}</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="about-section" class="col-12">
+            <div class="resume-specific-section row">
+                <div class="resume-category col-12">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h5 class="subtitle">{{'ABOUT_ME_DESCRIPTION_2' |translate}}</h5>
+                            <h5 class="subtitle">{{'ABOUT_ME_DESCRIPTION_3' |translate}}</h5>
+                            <h5 class="subtitle">{{'ABOUT_ME_DESCRIPTION_4' |translate}}</h5>
+                        </div>
+                    </div>
+                    <div class="row intert-container">
+                        <div *ngFor="let interest of interests| slice:0:6; let isOdd=odd;
+                            let isEven=even" class="col-2 description interest" [class.odd]="isOdd" [class.even]="isEven">
+                            <span>{{interest |translate}}</span>
+                        </div>
+                    </div>
+                    <div class="row intert-container">
+                        <div *ngFor="let interest of interests| slice:6:12; let isOdd=odd;
+                            let isEven=even" class="col-2 description interest" [class.odd]="!isOdd" [class.even]="!isEven">
+                            <span>{{interest |translate}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div id="about-section">
+            <div class="resume-specific-section">
+                <div class="resume-category">
+                    <div class="col-12">
+                        <div *ngFor="let interest of interests" class="description interest stagger-list">
+                            <span>{{interest |translate}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
 </div>

@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 @import '../src/assets/styles/common.scss';
 @import '../src/assets/styles/sections.scss';
@@ -16,7 +16,7 @@
 @import "animation.less"; */
 
 body {
-    background-color: #E5E5E5;
+    background-color: #f5f5f5;
     font-family: 'Lato', sans-serif !important;
   }
   

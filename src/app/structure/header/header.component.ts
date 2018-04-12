@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common'
+import { debug } from 'util';
 
 @Component({
   selector: 'my-header',
@@ -9,17 +11,19 @@ import { Router } from '@angular/router';
 export class HeaderComponent {
   optionSelected = 'about';
   router: Router;
+  route: string;
 
-  constructor(private _router: Router) {
+  constructor(private _router: Router, private _activatedRoute: ActivatedRoute, location: Location) {
     this.router = _router;
-    
-    switch (this.router.url) {
-      case '/': { this.optionSelected = 'about'; break; }
-      case 'resume': { this.optionSelected = 'resume'; break; }
-      case 'experience': { this.optionSelected = 'experience'; break; }
-      case 'contact': { this.optionSelected = 'contact'; break; }
-      case 'skills': { this.optionSelected = 'skills'; break; }
-      default: break;
+    this.route = location.path() || '';
+
+    switch (this.route) {
+      case '': { this.optionSelected = 'about'; break; }
+      case '/resume': { this.optionSelected = 'resume'; break; }
+      case '/experience': { this.optionSelected = 'experience'; break; }
+      case '/contact': { this.optionSelected = 'contact'; break; }
+      case '/skills': { this.optionSelected = 'skills'; break; }
+      default: { this.optionSelected = 'about'; break; }
     }
   }
 

@@ -16,12 +16,12 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: '', component: AboutComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'skills', component: SkillsComponent },
   { path: 'contact', component: ContactComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 

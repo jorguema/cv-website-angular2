@@ -1,19 +1,34 @@
 #about-section{
-    .resume-info {
-      border-left: 2px solid #b3c833 !important;
-    }
-    .interest{ 
-      float:left; 
-      margin: 0px 10px 0px 10px;
-    }
+    border-left: 3px solid #b3c833 !important;
+
+    .intert-container{
+      text-align: center;
+      padding: 0;
+      .interest{         
+        height: 105px;
+        line-height: 105px;
+        text-align: center;
+
+        span{
+          margin-top:20px;
+        }
+      }
+
+       .interest.odd{       
+        background-color:#fff;
+        color: #b3c833;
+      }
+       .interest.even{
+        background-color: #b3c833;
+        color:#fff;
+      }
+    }    
   } 
 
 
 
   #contact-section{
-    .resume-info {
-      border-left: 2px solid #fb8521 !important;
-    }
+    border-left: 3px solid #fb8521 !important;
     .contact-info{
       img{
         height: 20px;
@@ -39,16 +54,12 @@
 
 
   #experience-section{
-    .resume-info {
-      border-left: 2px solid #ce5043 !important;
-    }
+    border-left: 3px solid #ce5043 !important;
   }
 
 
   #skills-section{
-    .resume-info {
-      border-left: 2px solid #3f5ca9 !important;
-    }
+    border-left: 3px solid #3f5ca9 !important;
   
     .interest{
       float:left;
