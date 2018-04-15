@@ -17,8 +17,11 @@
 
 body {
     background-color: #f5f5f5;
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'Libre Franklin', sans-serif;
+
+    .custom-component { display: block; }
   }
+  
   
 
   
@@ -56,4 +59,12 @@ body {
   
   h3{
     font-size: 22px;
+  }
+
+  h4{
+    font-size: 20px;
+  }
+
+  h5{
+    font-size: 18px;
   }

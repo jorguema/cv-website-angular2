@@ -36,10 +36,10 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -17px;
+    right: -12px;
     background-color: white;
-    border: 4px solid #FF9F55;
-    top: 15px;
+    border: 4px solid #ce5043;
+    top: 20px;
     border-radius: 50%;
     z-index: 1;
 }
@@ -48,7 +48,7 @@
 .left {
     left: 0;
     .content{
-        border-left: 3px solid red;
+        border-left: 3px solid #ce5043;
     }
 }
 
@@ -57,7 +57,7 @@
     left: 50%;
 
     .content{
-        border-right: 3px solid red;
+        border-right: 3px solid #ce5043;
     }
 }
 
@@ -91,7 +91,7 @@
 
 /* Fix the circle for containers on the right side */
 .right::after {
-    left: -16px;
+    left: -13px;
 }
 
 /* The actual content */
@@ -138,18 +138,23 @@
 
 #exp-section{
     .content{
-
+        position: relative;
+        padding: 35px 30px 10px 30px;
         .title{
 
         }
         .date{
-
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 14px;
         }
         .subtitle{
-
+            font-style: italic;
         }
         .description{
-            
+            line-height: 19px;
+            font-size: 14px;
         }
     }
 }

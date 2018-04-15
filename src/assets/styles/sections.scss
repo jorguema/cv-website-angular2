@@ -1,28 +1,5 @@
 #about-section{
-    border-left: 3px solid #b3c833 !important;
-
-    .intert-container{
-      text-align: center;
-      padding: 0;
-      .interest{         
-        height: 105px;
-        line-height: 105px;
-        text-align: center;
-
-        span{
-          margin-top:20px;
-        }
-      }
-
-       .interest.odd{       
-        background-color:#fff;
-        color: #b3c833;
-      }
-       .interest.even{
-        background-color: #b3c833;
-        color:#fff;
-      }
-    }    
+    border-left: 3px solid #b3c833 !important;   
   } 
 
 
@@ -39,11 +16,5 @@
 
 
   #skills-section{
-    border-left: 3px solid #3f5ca9 !important;
-  
-    .interest{
-      float:left;
-      margin: 0px 5px 0px 5px;
-      padding: 0px 5px 0px 5px;
-    }
+    border-left: 3px solid #3f5ca9 !important; 
   }
