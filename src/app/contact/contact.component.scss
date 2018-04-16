@@ -47,6 +47,16 @@
   $screen-lg-min : 992px;
   
   @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) { 
+      #contact-section{
+        height: auto !important;
+        .contact-more{
+            position:relative !important;
+            height: auto !important;
+        }
+          .contact-separator{
+              top: -5px !important;
+          }
+      }
     .follow-me{
         padding-left: 65px !important;
         img{

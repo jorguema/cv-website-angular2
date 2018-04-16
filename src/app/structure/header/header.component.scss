@@ -220,10 +220,20 @@ $screen-md-min : 768px;
 $screen-lg-min : 992px;
 
 @media all and (min-width: $screen-xs-min) and (max-width: $screen-sm-min) { 
-   
+    #header-section{
+        .profile-image{
+            .description{
+              top: -260px !important; 
+            }
+        }
+
+        span.role{
+         display: none !important;
+        }
+    }
  }
 
-@media all and (min-width: $screen-xs-min) and (max-width: $screen-md-min) {
+@media all and (min-width: $screen-xs-min) and (max-width: 767px) {
       #header-section{
         .profile-image{
             .own-image{
@@ -252,7 +262,7 @@ $screen-lg-min : 992px;
 
     #header-section.resize{
       #menu-left-container{
-        height: 242px;
+        height: 250px;
       }
     
       .main-menu li{
