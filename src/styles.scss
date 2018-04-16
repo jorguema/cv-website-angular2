@@ -4,6 +4,7 @@
 @import '../src/assets/styles/common.scss';
 @import '../src/assets/styles/sections.scss';
 @import '../src/assets/styles/animation.scss';
+@import '../src/assets/styles/media.scss';
 
 /* @import "header/header.less";
 @import "left/left.less";
@@ -16,6 +17,8 @@
 @import "animation.less"; */
 
 body {
+    max-width: 100%;
+    overflow-x: hidden;
     background-color: #f5f5f5;
     font-family: 'Libre Franklin', sans-serif;
 

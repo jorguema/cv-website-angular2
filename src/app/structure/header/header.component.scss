@@ -39,8 +39,50 @@
       // background-position: center center;
       background-attachment: fixed;
   }
+
+  .resized-menu{
+    .menu-icon{
+      position: absolute;
+      right: 15px;
+      top: 8px; 
+      z-index: 999;
+      
+      img{
+        height: 32px;
+      }
+    }
+  }
+
+  .resized-menu{
+    display: none;
+  }
+
+  
 }
 
+#menu-left-container{
+  transition: height 0.35s ease-out;
+}
+
+// #header-section.resize{
+//   #menu-left-container{
+//     height: 242px;
+//   }
+
+//   .main-menu li{
+//     display: initial !important;
+//   }
+// }
+
+#header-section.resize.closed-resized-menu {
+  #menu-left-container{
+    height: 50px;
+  }
+
+  ul{
+    display: none;
+  }
+}
 
 #menu-left-container{
     position: fixed;
@@ -180,4 +222,80 @@
     }
   }
 
+
   
+  $screen-xs-min : 0px;
+  $screen-sm-min : 576px;
+  $screen-md-min : 768px;
+  $screen-lg-min : 992px;
+  
+  @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) { 
+     
+   }
+  
+  @media (min-width: $screen-xs-min) and (max-width: $screen-md-min) {
+        #header-section{
+          .profile-image{
+              .own-image{
+                  position: relative;
+                  top: -45px;
+                  left: 0;
+              }
+              .description{
+                top: -240px; 
+              }
+          }
+
+          .separator-title{
+            display: none;
+          }
+
+          span.role{
+            left: 50%;
+            transform: translateX(-50%);
+            top: 38px !important;
+            position: absolute !important;
+          }
+      }
+
+      #header-section.resize{
+        #menu-left-container{
+          height: 242px;
+        }
+      
+        .main-menu li{
+          display: initial !important;
+        }
+      }
+
+      #header-section .resized-menu{
+        display: initial !important; 
+      }     
+   } 
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: $screen-md-min) and (max-width: $screen-lg-min) {     
+      #header-section{
+          .profile-image{
+              .own-image{
+                  position: relative;
+                  top: -45px;
+                  left: 0;
+              }
+              .description{
+                top: -240px; 
+              }
+          }
+      }
+   }  
+
+   @media (min-width: $screen-md-min){
+    #header-section{
+      #menu-left-container{
+        height: 50px;
+      }
+    
+      ul{
+        display: initial !important;
+      }
+    }
+  }

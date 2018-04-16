@@ -1,6 +1,11 @@
-<header id="header-section">
+<header id="header-section" [class.closed-resized-menu]="!openedMenu" class="resize">
     <div id="menu-left-container">
         <div id="left-content">
+            <div class="resized-menu">
+                <div class="menu-icon">
+                        <img [src]="'/assets/images/menu.svg'" class="clickable" (click)="expandMenu()" />
+                </div>
+            </div>
             <div class="bckground-left">
                 <div class="menu-left">
                     <ul class="main-menu">
@@ -86,7 +91,10 @@
             <img src="/assets/images/me.jpg" alt="me">
         </div>
         <div class="description text-center">
-            <h2>Jorge Guerola Martínez | <span>Software Developer</span></h2>            
+            <h2>Jorge Guerola Martínez
+                <span class="separator-title">|</span>
+                <span class="role">Software Developer</span>
+            </h2>
         </div>
     </div>
 </header>

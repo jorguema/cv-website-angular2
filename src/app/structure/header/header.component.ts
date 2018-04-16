@@ -12,6 +12,7 @@ export class HeaderComponent {
   optionSelected = 'about';
   router: Router;
   route: string;
+  openedMenu: boolean = false;
 
   constructor(private _router: Router, private _activatedRoute: ActivatedRoute, location: Location) {
     this.router = _router;
@@ -27,24 +28,33 @@ export class HeaderComponent {
     }
   }
 
+  expandMenu(){
+    this.openedMenu = !this.openedMenu;
+  }
+
   about() {
     this.optionSelected = 'about';
+    this.openedMenu = false;
     this.router.navigate(['']);
   };
   resume() {
     this.optionSelected = 'resume';
+    this.openedMenu = false;
     this.router.navigate(['resume']);
   };
   experience() {
     this.optionSelected = 'experience';
+    this.openedMenu = false;
     this.router.navigate(['experience']);
   };
   contact() {
     this.optionSelected = 'contact';
+    this.openedMenu = false;
     this.router.navigate(['contact']);
   };
   skills() {
     this.optionSelected = 'skills';
+    this.openedMenu = false;
     this.router.navigate(['skills']);
   };
 }
